@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Magic Lantern | Contact</title>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="container" class="cf">
+			<header id="header" class="cf">
+				<div class="logo">
+					<a href="index.html"><img src="images/magiclantern.png" alt="Logo"></a>
+				</div>
+				<div class="navigation">
+					<a href="#menu" class="menu-link"><span class="icon-menu"></span></a>
+					<nav id="menu" role="navigation">
+						<ul>
+							<li><a href="movies.html" class="hvr-underline-from-center">Movies</a></li>
+							<li><a href="menu.html" class="hvr-underline-from-center">Menu</a></li>
+							<li><a href="events.html" class="hvr-underline-from-center">Events</a></li>
+							<li><a href="#" class="selected hvr-underline-from-center">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div id="map"></div>
+			<div>
+				<div class="restrict-width">
+					<div class="contact-form small-box" id="contactus">
+				<h2> We'd love to hear from you </h2>
+				<p> Drop us a note and we will gladly get back to you </p>
+				<form action="#">
+					<fieldset>
+						<label class="col-1-2 left">
+							First name
+							<input type="text" name="firstname" placeholder="First name">
+						</label>
+						<label class="col-1-2 right">
+							Last name
+							<input type="text" name="lastname" placeholder="Last name">
+						</label>
+						<label class="col-1-2 left">
+							Phone
+							<input type="text" name="phone" placeholder="Phone">
+						</label>
+						<label class="col-1-2 right">
+							Email
+							<input type="text" name="email" placeholder="Email">
+						</label>
+						<label class="col-1-2 left">
+							I am Interested in
+							<select>
+								<option></option>
+								<option>Parties</option>
+								<option>Private Events</option>
+								<option>Group Events</option>
+								<option>Charity Events</option>
+							</select>
+						</label>
+						<label class="col-1-2 right">
+							Company/Organization
+							<input type="text" name="company" placeholder="Company/Organization">
+						</label>
+						<label class="col-1-2 left">
+							Desired Date
+							<input type="text" name="date" placeholder="MM-DD-YYYY">
+						</label>
+						<label class="col-1-2 right">
+							Estimated # of Guests
+							<select>
+								<option></option>
+								<option>20-50</option>
+								<option>50-80</option>
+								<option>80-120</option>
+								<option>120-150</option>
+								<option>150+</option>
+							</select>
+						</label>
+						<label>
+							Additional Information
+							<textarea maxlength="1000" rows="6" placeholder="MESSAGE"></textarea>
+						</label>
+					</fieldset>
+				</form>
+				<div class="center">
+					<a href="#" class="button large">Send Email</a>
+				</div>
+					</div>
+				</div>
+			</div>
+			<div class="alt-bg">
+				<div class="restrict-width">
+					<div class="visit">
+					<h1 class="visit-step">Plan Your Visit</h1>
+					<div class="visit-options">
+						<div class="visit-step visit-ticket">
+							<p class="visit-step__order"> 1. </p>
+								<img src="images/ticket.png" alt="Movie Ticket" width="45">
+							<p class="visit-step__desc"> Purchase your movie tickets </p>
+						</div>
+						<div class="visit-step">
+							<p class="visit-step__order"> 2. </p>
+							<img src="images/watch.png" alt="Arrive" width="45">
+							<p class="visit-step__desc"> Arrive at theater 20 minutes early </p>
+						</div>
+						<div class="visit-step visit-seat">
+							<p class="visit-step__order"> 3. </p>
+							<img src="images/seat.png" alt="Seat" width="45">
+							<p class="visit-step__desc"> Find your seat & place an order </p>
+						</div>
+						<div class="visit-step visit-film">
+							<p class="visit-step__order"> 4. </p>
+							<img src="images/pay.png" alt="Watch Movie" width="45">
+							<p class="visit-step__desc"> Enjoy the movie & pay your bill </p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div id="footer">
+					<div class="social-media-icons">
+						<a href="http://www.facebook.com"><img alt="facebook" src="images/facebook.png" height="25"></a>
+						<a href="http://www.foursquare.com"><img alt="Foursquare" src="images/foursquare.png" height="25"></a>
+						<a href="http://www.yelp.com"><img alt="Yelp" src="images/yelp.png" height="25"></a>
+					</div>
+					<div class="footer-address">
+						<p>2155 E. Marks St, Baldwin Park, FL 32792, 407-678-8214</p>
+					</div>
+					<div class="copyright">
+						<p>&copy; 2016 Magic Lantern Inc.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXz7sUe9KTka7hlYRpI-H749q-wo3RkSg&callback=initMap"
+    	async defer></script>
+    	<script type="text/javascript" src="slick/slick.min.js"></script>
+    	<script src="js/main.js"></script>
+	</body>
+</html>

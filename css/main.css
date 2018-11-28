@@ -1,0 +1,1487 @@
+/* 
+---------------------------------------------
+this code resets css styles for all elements
+---------------------------------------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*:focus {
+	outline: 0;
+	outline: none;
+}
+
+/* 
+---------------------------------------------
+Clear-fix
+---------------------------------------------
+*/
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hvr-underline-from-center:before {
+	background: #eccc36;
+	height: 2px;
+}
+
+.menu-nav .hvr-underline-from-center:before {
+	background: #000;
+}
+
+.selected.hvr-underline-from-center:before {
+	left: 0;
+	right: 0;
+}
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus,
+.hvr-grow-shadow:active, .hvr-grow-shadow.today {
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.6);
+	-webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.hvr-grow-shadow {
+	cursor: pointer;
+}
+
+.aloma-experience-icons .hvr-grow-shadow:hover {
+	-webkit-transform: scale(1.2);
+  	transform: scale(1.2);
+  	box-shadow: none;
+}
+
+#container {
+	margin: 0 auto;
+	font: 400 16px/1.66em 'Work Sans', sans-serif;
+	color: #000;
+	border-top: 5px solid #eccc36;
+	background: rgba(0,0,0,0.04);
+}
+
+.restrict-width{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.box {
+	padding: 3% 5%;
+}
+
+.small-box {
+	padding: 5% 5% 5% 5%;
+}
+
+.hero {
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+select {
+	background: none;
+	border: none;
+	border: solid 1px #e5e5e5;
+	width: 100%;
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 0;
+    background: #fff url("../images/arrow.png") no-repeat 95% 12px;
+    padding-left: 5px;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+select:focus {
+	outline: none;
+}
+
+input, textarea {
+	width: 100%;
+	border: solid 1px #e5e5e5;
+	font-weight: 200;
+	font-size: 12px;
+	font-family: 'Work Sans', sans-serif;
+	padding-left: 5px;
+}
+
+input {
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 5px;
+	height: 30px;
+	padding-left: 5px;
+	background-color: #fff;
+}
+
+label {
+	font-weight: 300;
+}
+
+div.calendar {
+	width: 112px;
+	text-align: center;
+	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div.calendar a {
+    cursor: pointer;
+}
+
+div.calendar-day {
+	background-color: #333;
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.calendar-date {
+	background-color: #eccc36;
+	color: #000;
+	font-size: 25px;
+	height: 81px;
+	padding-top: 8px;
+	font-weight: 400;
+}
+
+.alt-bg {
+	background-color: #ededed;
+}
+
+iframe {
+	border: 0;
+}
+
+/* 
+---------------------------------------------
+Clear-fix
+---------------------------------------------
+*/
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+---------------------------------------------
+Links
+---------------------------------------------
+*/
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a.selected,
+nav a:hover {
+	color: #eccc36;
+}
+
+a.movie-showtime:hover {
+	color: #000;
+}
+
+a.movie-showtime.past:hover {
+	color: #000;
+	background-color: #d9d9d9;
+	cursor: default;
+}
+
+.transparent-button {
+	background-color: #eccc36;
+	font-size: 14px;
+	border-radius: 5px;
+	padding: 0.625em 1.25em;
+	font-weight: 300;
+	color: #fff;
+	color: #000;
+	display: inline-block;
+}
+
+a.transparent-button:hover {
+    color: #fff;
+    border: none;
+}
+
+.button {
+	background-color: #eccc36;
+	color: #fff;
+	color: #000;
+	font: 600 12px/1em 'Work Sans', sans-serif;
+	padding: 0.8em;
+}
+
+.button.large {
+	font-size: 16px;
+	padding: 0.6em 1em;
+}
+
+/* 
+---------------------------------------------
+Typography
+---------------------------------------------
+*/
+
+h1 {
+	font: 700 24px/1em 'Plafair Display', serif;
+	margin-bottom: 0.8em;
+	text-align: center;
+}
+
+h2 {
+	font: 700 26px/1.6em 'Playfair Display', serif;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font: 700 22px/1.6em 'Playfair Display', serif;
+	margin: 1em 0 0.5em 0;
+}
+
+h4 {
+	font: 600 18px/1.2em 'Work Sans', sans-serif;
+	margin: 2% auto;
+	text-align: center;
+}
+
+h5 {
+	font: 600 18px/1.2em 'Work Sans', sans-serif;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+small {
+	font: 300 12px/1em 'Work Sans', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+/* 
+---------------------------------------------
+Header
+---------------------------------------------
+*/
+
+#header {
+	padding: 20px 20px 0 65px;
+	position: relative;
+	background-color: #000;
+}
+
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.navigation {
+	width: 100%;
+}
+
+a.menu-link {
+	display: block;
+	margin: 2% 0 4% 92%;
+}
+
+.logo img {
+	height: 40px;
+	/*height: auto;*/
+	margin-bottom: 20px;
+}
+
+nav[role=navigation] {
+	-webkit-transition: all 0.3s ease-out;  
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.js nav[role=navigation] {
+	overflow: hidden;
+	max-height: 0;
+}
+nav[role=navigation].active {
+	max-height: 15em;
+}
+nav[role=navigation] ul {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #808080;
+}
+nav[role=navigation] li a {
+	display: block;
+	margin: 0.3em 0.8em;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #808080;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?gyd08f');
+	src:  url('../fonts/icomoon.eot?gyd08f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gyd08f') format('truetype'),
+    url('../fonts/icomoon.woff?gyd08f') format('woff'),
+    url('../fonts/icomoon.svg?gyd08f#icomoon') format('svg');
+ 	font-weight: normal;
+ 	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e5d2";
+  font-size: 30px;
+}
+
+/* 
+---------------------------------------------
+Footer
+---------------------------------------------
+*/
+
+#footer {
+	color: #000;
+	font: 500 16px/1.2em 'Work Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 65px;
+	background-color: #eccc36;
+	border-top: 5px solid #000;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#footer > div {
+	padding-bottom: 30px;
+}
+
+#footer .social-media-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;	
+}
+
+.social-media-icons a {
+	display: block;
+	vertical-align: center;
+}
+
+
+/* 
+---------------------------------------------
+Homepage
+---------------------------------------------
+*/
+
+.home-hero-text {
+	font: 400 18px/1.6em 'Work Sans', sans-serif;
+	margin: 5% 15% 10% 5%;
+}
+
+.home-hero-text p {
+	margin-bottom: 8%;
+}
+
+.home-hero-text a {
+	margin-right: 5%;
+}
+
+.calendar-list {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+}
+
+.calendar-list img {
+	height: 33px;
+	display: block;
+	margin-top: 60px;
+	cursor: pointer;
+}
+
+.calendar-list img.img-left {
+	margin-right: 30px;
+}
+
+.calendar-list img.img-right {
+	margin-left: 30px;
+}
+
+img.img-right {
+	margin-right: 0;
+}
+
+.movie-teaser-header {
+	margin: 5%;
+}
+
+.movie-teaser {
+	margin: 5% 3%;
+}
+
+.movie-teaser {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+	justify-items: center;
+}
+
+.movie-teaser-movie {
+	width: 340px;
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.movie-teaser-movie-image
+{
+	width: 150px;
+}
+
+.movie-teaser-movie-desc {
+	width: 170px;
+}
+
+.movie-teaser-movie-image img {
+	width: 150px;
+}
+
+.movie-teaser-movie-image img:hover {
+	cursor: pointer;
+}
+
+.movie-teaser-header h2 {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 40px;
+}
+
+p.movie-desc {
+	font: 300 italic 14px/1.2em 'Work Sans', sans-serif;
+	margin-bottom: 12%;
+}
+
+.movie-showtimes {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.movie-showtime {
+	background-color: #eccc36;
+	color: #000;
+	margin: 0 5% 5% 0;
+	display: block;
+	font: 500 14px/1em 'Work Sans', sans-serif;
+	padding: 1em;
+	width: 80px;
+	cursor: pointer;
+}
+
+.movie-showtimes .movie-showtime:nth-child(2),
+.movie-showtimes .movie-showtime:nth-child(4) {
+	margin-right: 0;
+}
+
+.movie-showtime.past {
+	background-color: #d9d9d9;
+	color: #000;
+}
+
+.dining-teaser {
+	display: flex;
+	flex-wrap: wrap;
+	font: 300 16px/1.6em 'Work Sans', sans-serif;
+	color: #fffefe;
+	letter-spacing: 0.7px;
+}
+
+.dining-teaser-image1 {
+	background: url('../images/burger.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: 200px;
+}
+
+.dining-teaser-image2 {
+	background: url('../images/pizza.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: 200px;
+}
+
+.dining-teaser-text {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),url('../images/salad.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+.dining-teaser-text-overlay p {
+	margin-bottom: 30px;
+	width: 250px;
+	text-align: left;
+}
+
+.dining-teaser-text-overlay {
+	text-align: center;
+}
+
+.aloma-experience p {
+	margin-bottom: 2em;
+}
+
+.aloma-experience-icons {
+	font: 500 14px/1em 'Work Sans', sans-serif;
+	text-align: center;
+}
+
+.aloma-experience-icons > div {
+	float: left;
+	width: 33%;
+}
+
+.aloma-experience-icons img {
+	width: auto;
+	height: 50px;
+	display: block;
+	margin-bottom: 2em;
+	margin: 0 auto 1.5em auto;
+}
+
+.aloma-experience-icons a {
+	color: #000;
+}
+
+.events-teaser {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.events-teaser-img {
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/hosting.jpg");
+	background-position: top center;
+	background-size: cover;
+}
+
+.events-teaser-text {
+	background: url("../images/alomahosts.png");
+	background-color: #e52e2e;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.events-teaser-content {
+	padding: 40px;
+}
+
+.events-teaser-text p {
+	margin-bottom: 30px;
+	text-align: left;
+	width: 325px;
+}
+
+.visit {
+	padding: 8% 15%;
+	font: 400 16px/1.6em 'Work Sans', sans-serif;
+	text-align: center;
+	/*background: url("../images/swirl_pattern.png");*/
+}
+
+.visit-options {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.visit-step {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 225px;
+	font-weight: 500;
+}
+
+.visit-step__order {
+	font-size: 21px;
+}
+
+.visit-step__desc {
+	width: 140px;
+}
+
+.calendar-list img.slick-disabled {
+	opacity: 0.2;
+	cursor: default;
+}
+
+/* 
+---------------------------------------------
+Movies Page
+---------------------------------------------
+*/
+
+.hero-nav {
+	text-align: center;
+}
+
+.small-button {
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: #e5e5e5;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 1%;
+	text-align: center;
+}
+
+.small-button.selected {
+	background-color: #e52e2e;
+}
+
+.hero-nav {
+	margin-bottom: 4%;
+}
+
+.movie-list h2 {
+	margin-bottom: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.movie {
+	float: left;
+	width: 40%;
+	margin-right: 10%;
+	margin-bottom: 12%;
+}
+
+.movie:nth-child(2n+3) {
+	margin-right: 0;
+}
+
+.movie h4 {
+    margin: 20px auto 0 auto;
+}
+
+.movie > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.movie-hero-text {
+	position: absolute;
+	top: 40%;
+	left: 13%;
+}
+
+.movie-hero-text a.button {
+	font-size: 10px;
+}
+
+/* 
+---------------------------------------------
+Events Page
+---------------------------------------------
+*/
+
+.events-hero-text {
+	font: 400 18px/1.6em 'Work Sans', sans-serif;
+	margin: 5% 15% 10% 5%;
+}
+
+.event-host {
+	margin: 5% 5% 3% 5%;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.events-hero-text p {
+	margin-bottom: 5%;
+}
+
+.events-hero-text a {
+	margin-right: 5%;
+}
+
+.events > div {
+	width: 100%;
+	height: auto;
+}
+
+.events img {
+	width: 100%;
+	height: auto;
+}
+
+.event:nth-child(3),
+.event:nth-child(4) {
+	margin-top: 5%;
+}
+
+.event:nth-child(1),
+.event:nth-child(2) {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.event h4 {
+	text-align: left;
+}
+
+.event a {
+	display: inline-block;
+	margin: 4% auto;
+}
+
+/* 
+---------------------------------------------
+Menu Page
+---------------------------------------------
+*/
+
+.menu-hero img {
+	display: block;
+}
+
+.menu-hero-text {
+	font: 400 18px/1.6em 'Work Sans', sans-serif;
+	text-align: center;
+	margin: 5% 0;
+}
+
+.menu-hero-text p {
+	margin-bottom: 5%;
+}
+
+/*.menu-nav {
+	font-size: 14px;
+}
+
+.menu-nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #eccc36; 
+	height: 60px;
+}
+
+.menu-nav li {
+	padding: 0 10px;
+	border-right: 1px solid #000;
+	font-weight: 600;
+}
+
+.menu-nav li:last-child {
+	border-right: none;
+}*/
+
+.menu-nav {
+	font-size: 14px;
+}
+
+.menu-nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #eccc36; 
+	height: 120px;
+	text-align: center;
+}
+
+.menu-nav li {
+	padding: 0 10px;
+	border: 1px solid #000;
+	font-weight: 600;
+	width: 50%;
+	padding-bottom: 10px;
+	/*margin-bottom: 10px;*/
+}
+
+.menu-nav a {
+	color: #000;
+}
+
+.menu-item {
+	margin-bottom: 1.5em;
+}
+
+.menu-item h5 {
+	margin-bottom: 0.1em;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.menu-category h2 {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 40px;
+}
+
+.menu-category p.menu-desc {
+	margin-top: -15px;
+	margin-bottom: 3em;
+	font-size: 14px;
+}
+
+#menu-salads,
+#menu-specials,
+#menu-kids,
+#menu-drinks,
+#menu-desserts {
+	display: none;
+}
+
+/* 
+---------------------------------------------
+Movie Detail Page
+---------------------------------------------
+*/
+
+.iframe {
+	display: block;
+	max-width: 100%;
+}
+
+.movie-details h2 {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.movie-details h3 {
+	color: #000;
+}
+
+.movie-details-section {
+	display: flex;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.movie-details-section > div {
+	width: 100%;
+}
+
+.movie-info-entry {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.movie-info-title {
+	width: 100%;
+	font-weight: 600;
+}
+
+.movie-info-desc {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.movie-day-showtimes a {
+	margin-right: 10px;
+}
+
+.movie-day-showtimes-first {
+	margin-bottom: 15px;
+}
+
+
+/* 
+---------------------------------------------
+Contact Page
+---------------------------------------------
+*/
+
+.contact-hero-text {
+	font: 400 18px/1.6em 'Work Sans', sans-serif;
+	margin: 5% 0;
+	text-align: center;
+}
+
+.contact-hero-text p {
+	margin-bottom: 5%;
+}
+
+#map {
+	height: 400px;
+}
+
+.col-1-2 {
+	width: 48%;
+}
+
+.col-1-2.left {
+	float: left;
+	margin-right: 2%;
+}
+
+.col-1-2.right {
+	float: right;
+	margin-left: 2%;
+}
+
+.contact-form h2,
+.contact-form p{
+	text-align: center;
+}
+
+.contact-form p {
+	margin-bottom: 40px;
+}
+
+.contact-form a {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.center {
+	text-align: center;
+}
+
+/* 
+---------------------------------------------
+Media Queries
+---------------------------------------------
+*/
+
+@media screen and (min-width: 480px) {
+	.visit-step-img {
+		float: none;
+	}
+
+	.visit-step p {
+		float: none;
+	}
+
+	.movie {
+		width: 30%;
+		margin-right: 5%;
+		margin-bottom: 10%;
+	}
+
+	.movie:nth-child(2n+3) {
+		margin-right: 5%;
+	}
+
+	.movie:nth-child(3n+4) {
+		margin-right: 0;
+	}
+
+	.movie-hero-text a.button {
+		font-size: 12px;
+	}
+
+	.dining-teaser-text-overlay p {
+		width: 350px;
+	}
+
+	.events-teaser-text p {
+		width: 400px;
+	}
+
+	.movie-info-title {
+		width: 25%;
+	}
+
+	.movie-info-desc {
+		width: 75%;
+		margin-bottom: 0;
+	}
+
+	.menu-nav ul{
+		height: 80px;
+	}
+
+	.menu-nav li {
+		width: 33.3%;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.events-teaser-text p {
+		width: 500px;
+	}
+
+	.logo img {
+		height: auto;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	#container {
+		font-size: 18px;
+	}
+
+	.box {
+		padding: 5% 10% 4% 10%;
+	}
+
+	.small-box {
+		padding: 5% 15%;
+	}
+
+	.button.large {
+		font-size: 18px;
+		padding: 0.6em 1em;
+	}
+
+	h1, h2 {
+		font-size: 42px;
+	}
+
+	h2 {
+		margin-bottom: 0.2em;
+	}
+
+	h3 {
+		font-size: 36px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	h5 {
+		font-size: 24px;
+	}
+
+	#header {
+		font: 400 16px/1em 'Work Sans', sans-serif;
+	}
+
+	.logo {
+		position: static;
+		float: left;
+		width: 250px;
+	}
+
+	.navigation {
+		margin: 0;
+	}
+
+	#menu {
+		margin-top: 8px;
+	}
+
+	a.menu-link {
+	   display: none;
+	}
+
+	.js nav[role=navigation] {
+		max-height: none;
+	}
+
+	nav[role=navigation] ul {
+		margin: 0 0 0 -0.25em;
+		border: 0;
+	}
+
+	nav[role=navigation]  li {
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+
+	nav[role=navigation] li a {
+		border: 0;
+	}
+
+	.aloma-experience-icons {
+		font-size: 16px;
+		margin: 0 18%;
+	}
+
+	.aloma-experience-icons .experience-eat img,
+	.aloma-experience-icons .experience-movie img {
+		height: 80px;
+	}
+
+	.aloma-experience-icons .experience-drink img {
+		height: 80px;
+	}	
+
+	.aloma-experience p {
+		margin-bottom: 4em;
+	}
+
+	.visit {
+		padding: 5%;
+		text-align: left;
+	}
+
+	.movie {
+		width: 20%;
+		margin-right: 6.6%;
+		margin-bottom: 8%;
+	}
+
+	.movie:nth-child(3n+4) {
+		margin-right: 6.6%;
+	}
+
+	.movie:nth-child(4n+5) {
+		margin-right: 0;
+	}
+
+	.events > div {
+		width: 45%;
+		float: left;
+	}
+
+	.event:nth-child(2n+1) {
+		margin-right: 10%;
+	}
+
+	.menu.box ,
+	.events.box,
+	.menu-nav.box {
+		padding: 3% 5%;
+	}
+
+	.menu-category > div {
+		float: left;
+		width: 45%;
+		margin-right: 10%;
+	}
+
+	.menu-category .menu-col-2 {
+		margin-right: 0;
+	}
+
+	.menu-category p.menu-desc {
+		font-size: 16px;
+	}
+
+	.events-hero-text {
+		padding: 0% 7%;
+	}
+
+	.contact-info > div {
+		float: left;
+	}
+
+	.contact-info .address {
+		width: 50%;
+		padding: 4% 0 10% 20%;
+		text-align: left;
+		border-right: 1px solid #e5e5e5;
+	}
+
+	.contact-info .map {
+		width: 50%;
+		padding: 6%;
+
+	}
+
+	.movie-hero-text a.button {
+		font-size: 14px;
+	}
+
+	.dining-teaser-image1,
+	.dining-teaser-image2 {
+		
+		height: 300px;
+	}
+
+	.events-teaser-text p {
+		width: 575px;
+	}
+
+	.menu-nav ul {
+		height: 60px;
+	}
+
+	.menu-nav li {
+		width: auto;
+		border: 0;
+		border-right: 1px solid #000;
+		padding-bottom: 0;
+	}
+
+	.menu-nav li:last-child {
+		border-right: none;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.dining-teaser-image1 {
+		order: 1;
+		width: 30%;
+	}
+
+	.dining-teaser-image2 {
+		order: 3;
+		width: 30%;
+	}
+
+	.dining-teaser-text {
+		order: 2;
+		width: 40%;
+	}
+
+	.home-hero-text {
+		position: absolute;
+		bottom: 10%;
+		right: 6%;
+		color: #fff;
+		margin: 0;
+		width: 450px;
+	}
+
+	.home-hero-text p {
+		width: 335px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.events-hero-text {
+		position: absolute;
+		bottom: 10%;
+		left: 6%;
+		color: #fff;
+		margin: 0;
+		width: 550px;
+		padding: 0%;
+	}
+
+	.events-hero-text p {
+		width: 450px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.menu-hero-text,
+	.contact-hero-text {
+		display: block;
+		position: absolute;
+		bottom: 5%;
+		left: 6%;
+		color: #fff;
+		margin: 0;
+		width: 750px;
+		padding: 0%;
+		text-align: left;
+	}
+
+	.menu-hero-text p,
+	.contact-hero-text p {
+		width: 600px;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	.movie-hero-text a.button {
+		font-size: 16px;
+		top: 45%;
+		left: 15%;
+	}
+
+	.events-teaser-img,
+	.events-teaser-text {
+		width: 50%;
+	}
+
+	.events-teaser-img {
+		height: auto;
+	}
+
+	.events-teaser-text p {
+		width: 400px;
+	}
+
+	.movie-details-section {
+		text-align: left;
+	}
+
+	.movie-details-section > div {
+		width: 50%;
+	}
+
+	.menu-nav {
+		font-size: 18px;
+	}
+
+	.menu-nav ul {
+		height: 80px;
+	}
+
+	.menu-nav li {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.dining-teaser-item {
+		height: 300px;
+	}
+
+	#footer {
+		justify-content: space-between;
+		height: 70px;
+		flex-wrap: wrap;
+	}
+
+	#footer > div {
+		padding-bottom: 0;
+	}
+
+	#footer .social-media-icons {
+		padding-right: 80px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	#header {
+		padding-left: 140px;
+	}
+
+	#footer {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+
+	.events-hero-text,
+	.menu-hero-text {
+		left: 140px;
+	}
+
+	.dining-teaser-item {
+		width: 33.3%;
+	}
+
+	.events-teaser-text p {
+		width: 525px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.events-teaser-text {
+		padding: 50px;
+	}
+
+	.events-teaser-text p {
+		width: 575px;
+	}
+
+	.dining-teaser-item {
+		height: 400px;
+	}
+}
+

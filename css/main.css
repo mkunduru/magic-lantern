@@ -1462,12 +1462,14 @@ Media Queries
 		left: 140px;
 	}
 
-	.dining-teaser-item {
-		width: 33.3%;
-	}
-
 	.events-teaser-text p {
 		width: 525px;
+	}
+}
+
+@media screen and (min-width: 1378px) {
+	.dining-teaser-item {
+		width: 33.3%;
 	}
 }
 
